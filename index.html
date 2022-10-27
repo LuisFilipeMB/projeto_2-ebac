@@ -15,37 +15,39 @@
     <link rel="stylesheet" href="./Style.css"/>
 </head>
 <body>
-    <header>
-        <img src="./imagens/logo.png" alt="capelo e diploma" />
-        <h1>Calculadora de médias</h1>
-    </header>
-    <form>
-        <input type="text" placeholder="Nome da Atividade" />
-        <input type="number" placeholder="Nota da Atividade" min="0" max="10" />
-        <button type="submit">Adicionar +</button>
-    </form>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome da Atividae</th>
-                <th>Nota da Atividade</th>
-                <th>Aprovado?</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Atividade</td>
-                <td>7</td>
-                <td><img src='./imagens/aprovado.png' alt="Emoji de festa" /></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Média Final</td>
-                <td>7</td>
-                <td>Aprovado</td>
-            </tr>
-        </tfoot>
-    </table>
+    <div class="container">
+        <header>
+            <img src="./imagens/logo.png" alt="capelo e diploma" />
+            <h1>Calculadora de médias</h1>
+        </header>
+        <form>
+            <input type="text" placeholder="Nome da Atividade" />
+            <input type="number" placeholder="Nota da Atividade" min="0" max="10" />
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da Atividae</th>
+                    <th>Nota da Atividade</th>
+                    <th>Aprovado?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Atividade</td>
+                    <td>7</td>
+                    <td><img src='./imagens/aprovado.png' alt="Emoji de festa" /></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média Final</td>
+                    <td>7</td>
+                    <td><span class="resultado reprovado">Aprovado</span></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
